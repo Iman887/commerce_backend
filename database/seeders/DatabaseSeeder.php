@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use App\Models\Category;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -24,5 +25,11 @@ class DatabaseSeeder extends Seeder
             'role' => 1,
             'wa' => '081234567890',
         ]);
+
+        Category::create(['name' => 'Fiction']);
+        Category::create(['name' => 'Comics']);
+        Category::create(['name' => 'Science']);
+        Category::create(['name' => 'History']);
+        Category::create(['name' => 'Biography']);
     }
 }
